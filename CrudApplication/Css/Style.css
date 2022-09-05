@@ -1,0 +1,124 @@
+﻿* {
+    padding: 0px;
+    margin: 0;
+}
+/* body{
+    background: url("img/food.png");
+} */
+/* :root{
+--navbar-height: 5px;
+} */
+#logo {
+    display: block;
+}
+
+    #logo img {
+        margin: 3px 6px;
+        height: 56px;
+    }
+
+#navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+    #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.5;
+        top: 0px;
+        left: 0px;
+    }
+
+    #navbar ul {
+        display: flex;
+    }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+            #navbar ul li a {
+                color: white;
+                padding: 3px 20px;
+                text-decoration: none;
+            }
+
+                #navbar ul li a:hover {
+                    color: black;
+                    background-color: white;
+                    border-radius: 12px;
+                }
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+    #home::before {
+        content: "";
+        position: absolute;
+        background: url('../img/salad.jpg') no-repeat center center/cover;
+        z-index: -1;
+        height: 500px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        opacity: 0.7;
+    }
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondry {
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
